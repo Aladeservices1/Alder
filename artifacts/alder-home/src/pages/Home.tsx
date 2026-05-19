@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Heart, Users, Clock } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ChatWidget from '../components/ChatWidget';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -287,6 +288,8 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      <ChatWidget />
     </div>
   );
 }
