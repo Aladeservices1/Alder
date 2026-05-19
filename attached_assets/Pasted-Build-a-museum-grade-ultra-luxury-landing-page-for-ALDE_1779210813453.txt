@@ -1,0 +1,140 @@
+Build a museum-grade, ultra-luxury landing page for ALDER HOME — an adult home care business in Portland, Oregon.
+
+BRAND IDENTITY:
+"Alder Home" is short, warm, and rooted. Pacific Northwest elegance. The name evokes strength (alder wood) + comfort (home). Every design choice must balance these two: strong yet soft, modern yet timeless.
+
+DESIGN PHILOSOPHY:
+This must look like a $100,000 website. The difference is WHITE SPACE, RESTRAINT, and MATERIAL QUALITY. Nothing flashes. Nothing crowds. Every element breathes. Think: Aesop skincare, Herman Miller furniture, The Line luxury goods.
+
+TECH STACK:
+- React + TypeScript + Vite
+- Tailwind CSS
+- Framer Motion (entrance animations only)
+- GSAP with ScrollTrigger (scroll reveals only)
+
+COLOR PALETTE (Pacific Northwest Luxury):
+- Background primary: #FDFBF7 (warm white — like soft linen)
+- Background secondary: #F6F3EF (warm stone — for alternating depth)
+- Text primary: #2C2A28 (soft charcoal — never pure black)
+- Text secondary: #6B6965 (warm grey — for supporting text)
+- Sage green: #6B8A6E (calm, healing, PNW forest)
+- Sage pale: #C2CFBA (whisper of green)
+- Wood accent: #B87B4A (alder wood warmth — used only for underlines or tiny accents)
+
+TYPOGRAPHY SYSTEM:
+- Brand mark "Alder Home": Playfair Display (italic or regular), letter-spacing -0.02em, size 1.25rem
+- Headlines: Playfair Display, 4.5rem (hero), 3rem (section), letter-spacing -0.02em, font-weight 400
+- Body: Inter, 1.125rem, line-height 1.7, font-weight 350
+- Small labels: Inter, 0.7rem, uppercase, letter-spacing 0.2em, color #6B6965
+
+SPACING ARCHITECTURE (Non-negotiable):
+- Section padding: 8rem (128px) top and bottom
+- Container max-width: 1200px, with 2rem side padding
+- Vertical rhythm: 3rem (48px) between major elements
+- Between headline and subheadline: 1.5rem (24px)
+- Between subheadline and button: 2.5rem (40px)
+- Card padding: 2.5rem (40px) inside
+- Card gaps: 2rem (32px) minimum
+- Paragraph max-width: 560px (never wider)
+
+SECTION 1: NAVIGATION — Ultra-minimal
+- Transparent at top, barely visible blur on scroll (backdrop-blur-sm, bg-white/80)
+- Left: "Alder Home" (Playfair Display, no tagline)
+- Center: Three links — "Services" / "Philosophy" / "Contact" (Inter, 0.9rem, uppercase tracking)
+- Right: "hello@alderhome.com" (subtle, same style as links, no button shape)
+- No "Schedule" button — too aggressive for luxury
+
+SECTION 2: HERO — The arrival
+- Full viewport height (min-h-screen)
+- Micro-label centered: "PORTLAND, OREGON" (0.7rem, tracking 0.3em, #6B6965)
+- Headline: "Care that feels like home." (4.5rem, Playfair, centered, max-width 900px, mx-auto)
+- Subheadline: "Personalized adult home care in the comfort of where you belong." (1.25rem, Inter, light weight, #6B6965, centered, max-width 600px, mx-auto)
+- No buttons on hero — let the message land without asking for action
+- Background: Ultra-slow gradient animation — #FDFBF7 to #F6F3EF to #FDFBF7 — 20-second loop, imperceptible
+- Scroll indicator: One thin vertical line at bottom center (1px wide, 40px tall, #C2CFBA)
+
+SECTION 3: PHILOSOPHY — The quiet conviction
+- Center-aligned, massive white space
+- A single elegant line above: "— Our philosophy —" (0.7rem, uppercase tracking, #6B6965)
+- Main statement: "The final years deserve the same dignity as the first." (2.25rem, Playfair italic, centered, max-width 800px)
+- Attribution: "Alder Home — Portland" (0.9rem, Inter, #6B6965, spaced above)
+
+SECTION 4: SERVICES — Three offerings, elegantly
+- Section label above: "— How we care —"
+- Headline: "Tailored support. Uncompromised dignity."
+- Three cards with MASSIVE gaps (2.5rem gap)
+- Card design: No border, no shadow, no background color (transparent)
+- Card hover: translateY(-6px), transition 0.3s ease — nothing else
+- Card icon: Simple line drawing from lucide-react (Heart, Users, Clock), color #6B8A6E, size 32px, opacity 0.8
+- Card headline: 1.5rem, Playfair, #2C2A28
+- Card description: 0.95rem, Inter, #6B6965, line-height 1.5
+- Services: "Personal Care" (bathing, grooming, dressing with dignity) / "Genuine Companionship" (conversation, errands, presence) / "Medical Reminders" (medication monitoring, appointment coordination)
+
+SECTION 5: ALDER ROOTS — Portland connection
+- Split layout (1fr 1fr)
+- Left: Headline "Rooted in Portland" (2rem, Playfair), paragraph about local caregivers, single line of trust text
+- Right: Abstract animated SVG — two overlapping circles (sage green and warm cream), slow pulse, representing alder trees and home
+- No bullet points. No checkmarks. Just quiet confidence.
+
+SECTION 6: TESTIMONIAL — One powerful voice
+- Center-aligned
+- Opening quote mark as decorative element (2.5rem, #C2CFBA, serif)
+- Testimonial text: 1.75rem, Inter light weight, italic, max-width 750px, line-height 1.5
+- Attribution: "— Family Member" (0.9rem, Inter, not bold, #6B6965)
+- Location: "Portland, Oregon" (0.7rem, uppercase tracking, #C2CFBA)
+- NO carousel. NO stars. ONE quote.
+
+SECTION 7: CONTACT — The invitation
+- Center-aligned, simple, generous spacing
+- Line: "Interested in learning more?" (1.25rem, Inter, #6B6965)
+- Email: "hello@alderhome.com" (2.5rem, Playfair, color #2C2A28, hover underline)
+- No phone number. No form. Just this.
+
+SECTION 8: FOOTER — Grounded finish
+- Background: #2C2A28 (dark charcoal)
+- Padding: 4rem top and bottom
+- Three columns: "Alder Home" (with tagline "Portland Adult Home Care"), "Services" (Personal Care, Companionship, Medical Reminders), "Connect" (hello@alderhome.com, Instagram placeholder, LinkedIn placeholder)
+- Links: 0.85rem, Inter, #B0AFA8, hover #FDFBF7
+- Copyright: "Alder Home — Portland, Oregon" (0.7rem, #6B6965, center, top border thin, padding-top 2rem)
+
+ANIMATION RULES (Less is more):
+- Allowed: Fade-up on scroll (opacity 0 to 1, y 24 to 0, duration 0.8s, ease power2.out)
+- Allowed: Hero gradient loop (20 seconds, imperceptible)
+- Allowed: Hero text stagger (each word appears, delay 0.05s between)
+- NOT allowed: Counting animations, 3D tilt, glowing borders, carousels, floating elements, parallax
+
+WHITE SPACE VERIFICATION (Must pass all):
+- [ ] Hero vertical padding: entire viewport height
+- [ ] Between sections: exactly 8rem (128px)
+- [ ] Between headline and subheadline: 1.5rem (24px)
+- [ ] Card inner padding: 2.5rem (40px)
+- [ ] Card gaps: 2.5rem (40px)
+- [ ] Paragraph width: never exceed 560px
+- [ ] Text never touches edge of screen
+
+WHAT TO AVOID (Remove if generated):
+- No stock photography of people
+- No smiling nurses or elderly hands holding hands
+- No heavy shadows or gradients on cards
+- No carousels or sliders
+- No "book now" or "schedule" buttons
+- No phone number floating
+- No social media icons in main content
+- NO METRICS SECTION — completely removed
+
+RESPONSIVE BEHAVIOR:
+- Mobile: reduce section padding to 4rem
+- Mobile: hero headline 2.5rem
+- Mobile: services cards stack vertically, gap 2rem
+- Mobile: split section becomes column
+- Mobile: contact email 1.75rem
+
+QUALITY REQUIREMENTS:
+- Must compile with npm run dev — zero errors
+- Zero TypeScript errors
+- Zero missing dependencies
+- All imports must resolve
+- Tailwind CSS fully configured
+- Responsive on all screen sizes
+
+BUILD THE COMPLETE APPLICATION NOW. Make it feel like walking into a quiet, sunlit room in a Portland craftsman — warm wood, soft linen, everything in its right place. This is Alder Home.
