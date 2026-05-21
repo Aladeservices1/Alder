@@ -156,6 +156,14 @@ export default function Home() {
               >
                 info@alderhomecare.org
               </a>
+              <a
+                href="tel:+19713462026"
+                className="font-sans text-muted-foreground"
+                style={{ fontSize: '0.85rem' }}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                (971) 346-2026
+              </a>
             </nav>
           </motion.div>
         )}
@@ -353,6 +361,13 @@ export default function Home() {
           >
             info@alderhomecare.org
           </a>
+          <a
+            href="tel:+19713462026"
+            className="font-serif text-foreground hover:underline decoration-primary transition-all duration-300 block mt-4"
+            style={{ fontSize: 'clamp(1rem, 3vw, 1.75rem)', color: '#6B6965' }}
+          >
+            (971) 346-2026
+          </a>
         </div>
       </section>
 
@@ -374,6 +389,7 @@ export default function Home() {
           <div className="flex flex-col gap-3">
             <span className="font-sans text-[0.85rem] font-medium text-[#FDFBF7] mb-2">Connect</span>
             <a href="mailto:info@alderhomecare.org" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors break-all">info@alderhomecare.org</a>
+            <a href="tel:+19713462026" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors">(971) 346-2026</a>
             <a href="#" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors">Instagram</a>
             <a href="#" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors">LinkedIn</a>
           </div>
