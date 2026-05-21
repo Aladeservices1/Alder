@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "T3GaLvrJLIGI1z96kzQ-v"
+uri = "file://artifacts/alder-home/src/assets/caregiver-portrait.png"
+type = "image"
+title = "caregiver brushing elderly woman hair"
+
+[[generated]]
+id = "vOIbmH9G6Io56UFtmegH9"
+uri = "file://artifacts/alder-home/src/assets/senior-man-portrait.png"
+type = "image"
+title = "senior man reading armchair sunlit"

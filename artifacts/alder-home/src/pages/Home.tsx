@@ -4,6 +4,8 @@ import { Heart, Users, Clock, Menu, X as XIcon } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ChatWidget from '../components/ChatWidget';
+import caregiverPortrait from '../assets/caregiver-portrait.png';
+import seniorManPortrait from '../assets/senior-man-portrait.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -204,7 +206,7 @@ export default function Home() {
 
       {/* SECTION 2 - HERO */}
       <section
-        className="min-h-screen flex flex-col items-center justify-center px-6 md:px-8 relative pt-20 overflow-hidden"
+        className="min-h-screen flex flex-col items-center justify-center px-6 md:px-8 relative pt-20 pb-24"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1758691031798-3f14294143fd?ixlib=rb-4.1.0&fm=jpg&q=85&w=2400&auto=format&fit=crop")',
           backgroundSize: 'cover',
@@ -243,15 +245,10 @@ export default function Home() {
           </motion.p>
 
           {/* Two portrait images */}
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.65 }}
-            className="grid grid-cols-2 gap-3 md:gap-5 mt-10 md:mt-14 w-full max-w-[340px] md:max-w-[440px]"
-          >
+          <div className="grid grid-cols-2 gap-3 md:gap-5 mt-10 md:mt-14 w-full max-w-[340px] md:max-w-[440px]">
             <div className="overflow-hidden rounded-sm" style={{ aspectRatio: '3/4' }}>
               <img
-                src="https://plus.unsplash.com/premium_photo-1681825279466-ef3318f7a11e?fm=jpg&q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0"
+                src={seniorManPortrait}
                 alt="Senior man relaxing at home"
                 className="w-full h-full object-cover object-top"
                 loading="eager"
@@ -259,13 +256,13 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-sm" style={{ aspectRatio: '3/4' }}>
               <img
-                src="https://plus.unsplash.com/premium_photo-1726794014152-c369f7596b0b?fm=jpg&q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0"
-                alt="Senior woman in her garden"
+                src={caregiverPortrait}
+                alt="Caregiver gently brushing senior woman's hair"
                 className="w-full h-full object-cover object-top"
                 loading="eager"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
 
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
