@@ -4,8 +4,7 @@ import { Heart, Users, Clock, Menu, X as XIcon } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ChatWidget from '../components/ChatWidget';
-import caregiverPortrait from '../assets/caregiver-portrait.png';
-import seniorManPortrait from '../assets/senior-man-portrait.png';
+import portlandCareScene from '../assets/portland-care-scene.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -244,25 +243,6 @@ export default function Home() {
             Personalized adult home care in the comfort of where you belong.
           </motion.p>
 
-          {/* Two portrait images */}
-          <div className="grid grid-cols-2 gap-3 md:gap-5 mt-10 md:mt-14 w-full max-w-[340px] md:max-w-[440px]">
-            <div className="overflow-hidden rounded-sm" style={{ aspectRatio: '3/4' }}>
-              <img
-                src={seniorManPortrait}
-                alt="Senior man relaxing at home"
-                className="w-full h-full object-cover object-top"
-                loading="eager"
-              />
-            </div>
-            <div className="overflow-hidden rounded-sm" style={{ aspectRatio: '3/4' }}>
-              <img
-                src={caregiverPortrait}
-                alt="Caregiver gently brushing senior woman's hair"
-                className="w-full h-full object-cover object-top"
-                loading="eager"
-              />
-            </div>
-          </div>
         </div>
 
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
@@ -351,12 +331,14 @@ export default function Home() {
             </p>
           </div>
           <div className="flex-1 flex justify-center w-full">
-            <svg viewBox="0 0 300 300" className="w-[220px] h-[220px] md:w-[300px] md:h-[300px] animate-svg-breathe">
-              <g>
-                <ellipse cx="150" cy="150" rx="130" ry="110" fill="hsl(124 12% 48%)" opacity="0.5" />
-                <ellipse cx="140" cy="140" rx="100" ry="120" fill="hsl(40 60% 98%)" stroke="hsl(95 19% 77%)" strokeWidth="1.5" />
-              </g>
-            </svg>
+            <div className="overflow-hidden rounded-sm w-full max-w-[520px]" style={{ aspectRatio: '4/3' }}>
+              <img
+                src={portlandCareScene}
+                alt="Caregiver sitting beside elderly person on a couch, handing them tea"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
