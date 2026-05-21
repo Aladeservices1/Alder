@@ -149,12 +149,12 @@ export default function Home() {
                 </button>
               ))}
               <a
-                href="mailto:hello@alderhome.com"
+                href="mailto:info@alderhomecare.org"
                 className="font-sans text-muted-foreground"
                 style={{ fontSize: '0.85rem', marginTop: '1rem' }}
                 onClick={() => setMobileMenuOpen(false)}
               >
-                hello@alderhome.com
+                info@alderhomecare.org
               </a>
             </nav>
           </motion.div>
@@ -179,8 +179,8 @@ export default function Home() {
 
           {/* Desktop email / Mobile hamburger */}
           <div className="flex items-center gap-4">
-            <a href="mailto:hello@alderhome.com" className="hidden md:block font-sans text-[0.9rem] uppercase tracking-[0.2em] text-muted-foreground hover:opacity-70 transition-opacity">
-              hello@alderhome.com
+            <a href="mailto:info@alderhomecare.org" className="hidden md:block font-sans text-[0.9rem] uppercase tracking-[0.2em] text-muted-foreground hover:opacity-70 transition-opacity">
+              info@alderhomecare.org
             </a>
             <button
               className="md:hidden p-1"
@@ -347,11 +347,11 @@ export default function Home() {
             Interested in learning more?
           </p>
           <a
-            href="mailto:hello@alderhome.com"
+            href="mailto:info@alderhomecare.org"
             className="font-serif text-foreground hover:underline decoration-primary transition-all duration-300 break-all"
             style={{ fontSize: 'clamp(1.25rem, 4vw, 2.5rem)' }}
           >
-            hello@alderhome.com
+            info@alderhomecare.org
           </a>
         </div>
       </section>
@@ -373,7 +373,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-3">
             <span className="font-sans text-[0.85rem] font-medium text-[#FDFBF7] mb-2">Connect</span>
-            <a href="mailto:hello@alderhome.com" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors break-all">hello@alderhome.com</a>
+            <a href="mailto:info@alderhomecare.org" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors break-all">info@alderhomecare.org</a>
             <a href="#" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors">Instagram</a>
             <a href="#" className="font-sans text-[0.85rem] text-[#B0AFA8] hover:text-[#FDFBF7] transition-colors">LinkedIn</a>
           </div>

@@ -120,7 +120,7 @@ export default function ChatWidget() {
         ...prev,
         {
           role: "assistant",
-          content: "I'm sorry, something went wrong. Please try again or reach out to us at hello@alderhome.com.",
+          content: "I'm sorry, something went wrong. Please try again or reach out to us at info@alderhomecare.org.",
         },
       ]);
     } finally {
