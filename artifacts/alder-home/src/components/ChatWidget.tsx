@@ -144,10 +144,12 @@ export default function ChatWidget() {
         data-testid="button-chat-toggle"
         onClick={open ? () => setOpen(false) : handleOpen}
         aria-label={open ? "Close chat" : "Open chat"}
-        className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300"
+        className="fixed bottom-8 right-8 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300"
         style={{
           backgroundColor: "#6B8A6E",
           color: "#FDFBF7",
+          zIndex: 99999,
+          cursor: "pointer",
         }}
       >
         {open ? (
@@ -159,8 +161,9 @@ export default function ChatWidget() {
 
       <div
         data-testid="chat-widget-panel"
-        className="fixed bottom-28 right-8 z-50 transition-all duration-300 origin-bottom-right"
+        className="fixed bottom-28 right-8 transition-all duration-300 origin-bottom-right"
         style={{
+          zIndex: 99998,
           width: "min(380px, calc(100vw - 2rem))",
           opacity: open ? 1 : 0,
           transform: open ? "scale(1) translateY(0)" : "scale(0.95) translateY(8px)",
