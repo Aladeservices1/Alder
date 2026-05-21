@@ -203,21 +203,31 @@ export default function Home() {
       </nav>
 
       {/* SECTION 2 - HERO */}
-      <section className="animate-hero-bg min-h-screen flex flex-col items-center justify-center px-6 md:px-8 relative pt-20">
-        <div className="flex flex-col items-center text-center">
+      <section
+        className="min-h-screen flex flex-col items-center justify-center px-6 md:px-8 relative pt-20 overflow-hidden"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1758691031798-3f14294143fd?ixlib=rb-4.1.0&fm=jpg&q=85&w=2400&auto=format&fit=crop")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+        }}
+      >
+        {/* Warm overlay */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(44,43,40,0.52) 0%, rgba(44,43,40,0.38) 60%, rgba(44,43,40,0.65) 100%)' }} />
+
+        <div className="relative z-10 flex flex-col items-center text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15 }}
             className="mb-6"
           >
-            <span className="font-sans text-[0.7rem] uppercase tracking-[0.2em] text-muted-foreground">PORTLAND, OREGON</span>
+            <span className="font-sans text-[0.7rem] uppercase tracking-[0.2em] text-white/70">PORTLAND, OREGON</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.3 }}
-            className="font-serif tracking-[-0.02em] font-normal max-w-[900px] leading-tight mb-6 text-foreground"
+            className="font-serif tracking-[-0.02em] font-normal max-w-[900px] leading-tight mb-6 text-white"
             style={{ fontSize: 'clamp(2.25rem, 6vw, 4.5rem)' }}
           >
             Care that feels like home.
@@ -226,15 +236,40 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.45 }}
-            className="font-sans font-light text-muted-foreground max-w-[600px] leading-[1.7]"
+            className="font-sans font-light text-white/80 max-w-[600px] leading-[1.7]"
             style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)' }}
           >
             Personalized adult home care in the comfort of where you belong.
           </motion.p>
+
+          {/* Two portrait images */}
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.65 }}
+            className="grid grid-cols-2 gap-3 md:gap-5 mt-10 md:mt-14 w-full max-w-[340px] md:max-w-[440px]"
+          >
+            <div className="overflow-hidden rounded-sm" style={{ aspectRatio: '3/4' }}>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1681825279466-ef3318f7a11e?fm=jpg&q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0"
+                alt="Senior man relaxing at home"
+                className="w-full h-full object-cover object-top"
+                loading="eager"
+              />
+            </div>
+            <div className="overflow-hidden rounded-sm" style={{ aspectRatio: '3/4' }}>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1726794014152-c369f7596b0b?fm=jpg&q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0"
+                alt="Senior woman in her garden"
+                className="w-full h-full object-cover object-top"
+                loading="eager"
+              />
+            </div>
+          </motion.div>
         </div>
 
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
-          <div className="w-[1px] h-[40px] bg-border animate-scroll-pulse" />
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
+          <div className="w-[1px] h-[40px] bg-white/40 animate-scroll-pulse" />
         </div>
       </section>
 
