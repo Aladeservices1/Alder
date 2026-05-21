@@ -165,6 +165,8 @@ export default function ChatWidget() {
         style={{
           zIndex: 99998,
           width: "min(380px, calc(100vw - 2rem))",
+          right: "max(1rem, env(safe-area-inset-right, 1rem))",
+          bottom: "calc(4.5rem + env(safe-area-inset-bottom, 0px))",
           opacity: open ? 1 : 0,
           transform: open ? "scale(1) translateY(0)" : "scale(0.95) translateY(8px)",
           pointerEvents: open ? "auto" : "none",
