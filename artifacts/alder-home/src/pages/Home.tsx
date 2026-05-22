@@ -177,7 +177,10 @@ export default function Home() {
       >
         <div className="max-w-[1200px] mx-auto px-6 md:px-8 flex items-center justify-between">
           {/* Logo */}
-          <div className="font-serif tracking-[-0.02em] text-[1.25rem] flex-shrink-0">Alder Home</div>
+          <div
+            className="font-serif tracking-[-0.02em] text-[1.25rem] flex-shrink-0 transition-colors duration-500"
+            style={{ color: scrolled ? undefined : 'rgba(255,255,255,0.92)' }}
+          >Alder Home</div>
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-8">
@@ -215,30 +218,53 @@ export default function Home() {
         {/* Warm overlay */}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(28,27,24,0.55) 0%, rgba(28,27,24,0.50) 50%, rgba(28,27,24,0.68) 100%)' }} />
 
-        <div className="relative z-10 flex flex-col items-center text-center w-full max-w-[800px] px-2">
+        <div className="relative z-10 flex flex-col items-center text-center w-full max-w-[900px] px-4 sm:px-6">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.15 }}
-            className="mb-5"
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="mb-4"
           >
-            <span className="font-sans text-[0.65rem] uppercase tracking-[0.18em] text-white/70">PORTLAND, OREGON</span>
+            <span className="font-sans text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.28em] text-white/60">Portland, Oregon</span>
           </motion.div>
+
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.3 }}
-            className="font-serif tracking-[-0.02em] font-normal w-full leading-tight mb-5 text-white"
-            style={{ fontSize: 'clamp(2rem, 7vw, 4.5rem)', textShadow: '0 2px 12px rgba(0,0,0,0.35)' }}
+            transition={{ duration: 1.0, delay: 0.25 }}
+            className="font-serif w-full leading-none mb-5 text-white"
+            style={{
+              fontSize: 'clamp(2.75rem, 12vw, 6.5rem)',
+              fontWeight: 800,
+              letterSpacing: '-0.02em',
+              textShadow: '0 2px 24px rgba(0,0,0,0.45)',
+            }}
           >
-            Care that feels like home.
+            Alder Home
           </motion.h1>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.45 }}
-            className="font-sans font-light text-white w-full max-w-[560px] leading-[1.75]"
-            style={{ fontSize: 'clamp(0.95rem, 2.8vw, 1.2rem)', textShadow: '0 1px 8px rgba(0,0,0,0.45)' }}
+            className="font-serif italic font-normal text-white/90 w-full leading-snug mb-6"
+            style={{
+              fontSize: 'clamp(1.05rem, 3.5vw, 1.5rem)',
+              textShadow: '0 1px 10px rgba(0,0,0,0.4)',
+            }}
+          >
+            Care that feels like home.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.6 }}
+            className="font-sans font-light text-white/75 w-full max-w-[520px] leading-[1.8]"
+            style={{
+              fontSize: 'clamp(0.875rem, 2.4vw, 1.05rem)',
+              textShadow: '0 1px 8px rgba(0,0,0,0.45)',
+            }}
           >
             Personalized adult home care in the comfort of where you belong.
           </motion.p>
