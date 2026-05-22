@@ -213,23 +213,23 @@ export default function Home() {
         }}
       >
         {/* Warm overlay */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(44,43,40,0.52) 0%, rgba(44,43,40,0.38) 60%, rgba(44,43,40,0.65) 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(28,27,24,0.55) 0%, rgba(28,27,24,0.50) 50%, rgba(28,27,24,0.68) 100%)' }} />
 
-        <div className="relative z-10 flex flex-col items-center text-center">
+        <div className="relative z-10 flex flex-col items-center text-center w-full max-w-[800px] px-2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15 }}
-            className="mb-6"
+            className="mb-5"
           >
-            <span className="font-sans text-[0.7rem] uppercase tracking-[0.2em] text-white/70">PORTLAND, OREGON</span>
+            <span className="font-sans text-[0.65rem] uppercase tracking-[0.18em] text-white/70">PORTLAND, OREGON</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.3 }}
-            className="font-serif tracking-[-0.02em] font-normal max-w-[900px] leading-tight mb-6 text-white"
-            style={{ fontSize: 'clamp(2.25rem, 6vw, 4.5rem)' }}
+            className="font-serif tracking-[-0.02em] font-normal w-full leading-tight mb-5 text-white"
+            style={{ fontSize: 'clamp(2rem, 7vw, 4.5rem)', textShadow: '0 2px 12px rgba(0,0,0,0.35)' }}
           >
             Care that feels like home.
           </motion.h1>
@@ -237,12 +237,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.45 }}
-            className="font-sans font-light text-white/80 max-w-[600px] leading-[1.7]"
-            style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)' }}
+            className="font-sans font-light text-white w-full max-w-[560px] leading-[1.75]"
+            style={{ fontSize: 'clamp(0.95rem, 2.8vw, 1.2rem)', textShadow: '0 1px 8px rgba(0,0,0,0.45)' }}
           >
             Personalized adult home care in the comfort of where you belong.
           </motion.p>
-
         </div>
 
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
@@ -323,10 +322,10 @@ export default function Home() {
             >
               Rooted in Portland
             </h2>
-            <p className="font-sans text-[1.125rem] font-light leading-[1.7] text-foreground mb-6">
+            <p className="font-sans text-[1rem] md:text-[1.125rem] font-light leading-[1.7] text-foreground mb-6">
               Our caregivers are locals who know Portland, its neighborhoods, its rhythms, and its people. We believe that understanding the community is just as important as understanding the care.
             </p>
-            <p className="font-sans text-[1.125rem] font-light leading-[1.7] text-foreground">
+            <p className="font-sans text-[1rem] md:text-[1.125rem] font-light leading-[1.7] text-foreground">
               Every caregiver is background-checked, bonded, and chosen for their warmth.
             </p>
           </div>
@@ -346,10 +345,10 @@ export default function Home() {
       {/* SECTION 6 - TESTIMONIAL */}
       <section ref={testimonialRef} className="py-16 md:py-[8rem] bg-background flex flex-col items-center text-center px-6 md:px-8">
         <div className="max-w-[1200px] mx-auto w-full flex flex-col items-center">
-          <span className="font-serif text-[5rem] text-border leading-none block mb-4">"</span>
+          <span className="font-serif text-[3.5rem] md:text-[5rem] text-border leading-none block mb-4">"</span>
           <p
-            className="font-sans font-light italic text-foreground max-w-[750px] leading-[1.6] mb-8"
-            style={{ fontSize: 'clamp(1.125rem, 3vw, 1.75rem)' }}
+            className="font-sans font-light italic text-foreground w-full max-w-[750px] leading-[1.6] mb-8"
+            style={{ fontSize: 'clamp(1rem, 3vw, 1.75rem)' }}
           >
             For the first time in years, my mother looked forward to her days. Not just cared for — truly seen.
           </p>
@@ -365,7 +364,7 @@ export default function Home() {
       {/* SECTION 7 - CONTACT */}
       <section id="contact" className="py-16 md:py-[8rem] bg-secondary flex flex-col items-center text-center px-6 md:px-8">
         <div className="max-w-[1200px] mx-auto w-full">
-          <p className="font-sans text-[1.25rem] text-muted-foreground mb-6">
+          <p className="font-sans text-[1rem] md:text-[1.25rem] text-muted-foreground mb-6">
             Interested in learning more?
           </p>
           <a
