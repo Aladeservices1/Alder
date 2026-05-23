@@ -285,9 +285,9 @@ export default function Home() {
             className="font-serif italic max-w-[800px] leading-snug mb-6 text-foreground"
             style={{ fontSize: 'clamp(1.5rem, 4vw, 2.25rem)' }}
           >
-            "The final years deserve the same dignity as the first."
+            "Every stage of life deserves comfort, connection, and care."
           </h2>
-          <p className="font-sans text-[0.9rem] text-muted-foreground">
+          <p className="font-sans text-[0.9rem] italic text-muted-foreground">
             Alder Home — Portland
           </p>
         </div>
