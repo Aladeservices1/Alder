@@ -1,0 +1,1 @@
+- [Codegen with pnpm catalogs](codegen-catalogs.md) — Orval can misdetect React Query versions when dependencies use catalog references.
